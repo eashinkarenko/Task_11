@@ -20,7 +20,8 @@ namespace ConsoleApplication12
                 onlyBinary = tempstr.Length == 0;
                 if (!onlyBinary)
                 {
-                    Console.WriteLine("Сообщение содержит посторонние символы!");
+                    Console.WriteLine(@"Сообщение содержит посторонние символы!
+Повторите ввод...");
                 }
                 else
                 {
@@ -28,7 +29,8 @@ namespace ConsoleApplication12
                     if (input.Length % 3 == 0)
                         ok = true;
                     else
-                        Console.WriteLine("Количество символов не кратно 3!");
+                        Console.WriteLine(@"Количество символов не кратно 3!
+Повторите ввод...");
                 }
 
             }
